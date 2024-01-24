@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+span {
+    font-size: 20px;
+}
+
+body {
+    font-family: 'poppins',sans-serif;
+}
+
+
+/* global Tags */
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+}
+
+span {
+    font-size: 0.9rem;
+    color: #757373;
+    font-weight: bold;
+}
+
+h6 {
+    font-size: 1.1re,;
+    color: rgb(24, 24, 49)
+}  
+
+        /*navigation */
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+   display: flex; 
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 1vw 8vw; 
+   align-items: center;
+   box-shadow: 30px 30px 40px rgba(0, 0, 0, 0.15);
+   z-index: 999;
+}
+nav img {
+    width: 100px;
+    height: 105PX;
+    cursor:pointer;
+}
+.navigation {
+    display: flex;
+}
+.menu-btn {
+   width: 30px; 
+   height: 30px;
+}
+.navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navigation ul li {
+    list-style: none;
+    margin-left: 30px;
+}
+.navigation ul li a {
+    text-decoration: none;
+    color: rgb(21, 21, 100);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3S ease;
+}
+.navigation ul li a:hover{
+    color: #FDc93B;
+}
+/* Home */
+
+#homei {
+    background-image: linear-gradient(rgba(9, 5, 54,0.3),
+    rgba(5, 4, 46, 0.7)), url("images/Untitled-1.jpg");
+    width:100%;
+    height: 100vh;
+    background-size: cover ;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+#home {
+    background-image: linear-gradient(rgba(9, 5, 54,0.3),
+    rgba(5, 4, 46, 0.7)), url("images/ground2.jpg");
+    width:100%;
+    height: 100vh;
+    background-size: cover ;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+#home h2 {
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+#home p {
+  width: 50%; 
+  color: #fff;
+  font-size: 0.9rem; 
+  line-height: 25px;
+}
+#home .btn {
+  margin-top: 30px;  
+}
+#home a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+#home a.blue {
+    color: #fff;
+    background-color: rgb( 21, 21, 100);
+    transition: 0.3s ease; 
+}
+#home a.blue:hover {
+    color:  rgb( 21, 21, 100);
+    background-color: #fff; 
+}
+#home a.yellow {
+    color: #fff;
+    background-color: #FDc93B;
+    transition: 0.3s ease; 
+}
+#home a.yellow:hover {
+    color: rgb( 21, 21, 100);
+    background-color: #fff; 
+} 
+
+/* features */
+
+#features{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center; 
+}
+#features .fea-base {
+    display: grid;
+    grid-template-columns:  repeat(auto-fit,minmax(320px,1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}   
+.fea-box {
+    background-color: #f9f9ff;
+    text-align: start;
+}
+.fea-box i {
+    font-size: 2.3rem;
+    color: rgb( 44, 44, 80);
+
+}
+.fea-box h3 {
+     font-size: 1.2rem;
+     font-weight: 600;
+     color: rgb(46,46, 59);
+     padding: 13px 0 7px 0;
+}
+.fea-box p {
+   font-size: 1rem; 
+   font-weight: 400;
+   color: rgb(70, 70, 87 );
+}
+
+/* course */
+
+#course {
+    padding: 8vw 8vw 8vw 8vw;
+    text-align: center;
+}
+.courses {
+   text-align: start;
+   background: #f9f9ff; 
+   height: 100%;
+   display: inline-block;
+}
+.courses img {
+    background-size: cover;
+    background-position: center;
+    margin-right: 5px;
+    border-color: blue;
+    display: flex; 
+    
+}
+ h3 {
+    color: #232355;
+    font-weight: bolder;
+    margin-bottom: 25px;
+    margin-top: 25px;
+ }
+
+
+ /* registration */
+
+ .registration {
+    background-image: linear-gradient(rgba(99, 112, 168,0.5),
+    rgba(81, 91, 233, 0.5)), url("images/signs.JPG");
+    padding: 6vw 8vw 6vw 8vw;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+.registration .reminder {
+color:  #fff;
+}
+.registration .reminder h1 {
+color:  #fff;
+}
+.registration .reminder .time {
+    display: flex;
+    margin-top: 40px;
+}
+.registration .reminder .time .date {
+   text-align: center;
+   padding: 13px 33px;
+   background: rgba(255, 255,  255, 0.25);
+   backdrop-filter: blur(4px);
+   box-shadow: 0 8px 32px 0 rgba(31, 38,  135, 0.37);
+   border-radius: 10px;
+   margin: 0 5px 10px 5px;
+   border: 1px solid  rgba(255, 255,  255, 0.18);
+   font-size: 1.1rrem;
+   font-weight: 600;
+   width: 100px;
+   height: 60px;
+}
+
+.registration .form {
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38,  135, 0.37 );
+    width: 550px;
+}
+.registration .form input{
+    margin: 15px 0;
+    padding:  15px 10px;
+    border: 1px solid rgb(84,  40, 241);
+    outline: none;   
+}
+.registration .form input::placeholder {
+     color: #413c3c;
+     font-weight: 500;
+     font-size: 0.9rem;
+}
+.registration .form .btn{
+   margin-top: 20px; 
+}
+.registration .form .syellow {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #FDc93B;
+    transition: 0.3s ease; 
+}
+.registration .form .syellow:hover {
+    
+    color: rgb( 21, 21, 100);
+    background-color: #fff; 
+} 
+button {
+    padding-right: 50px;
+}
+strong {
+    color: white;
+}
+.boo {
+    float: right;
+}.shuk {color: blue;
+    float: right;
+    cursor: pointer;
+    border-color: palevioletred;
+    border-color: solid;
+}.bold {
+    color: yellow;
+}
+h4 {
+    margin-top: 100PX;
+}
+.sh {
+    margin-top: 10px;
+    color: red;
+}
+  @media (max-width: 769px) {
+    nav {
+        padding: 15px 20px;
+    } 
+    nav img {
+        width: 130px;
+    }
+  }
